@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🦷 eDentify - Dental Clinic Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive React website built for a dental clinic. The application includes online appointment functionality, a full presentation of services, pricing, contact information, and a gallery of before-and-after transformations. This project was built from scratch and fully redesigned based on the outdated version of the previous site, with a focus on improved structure, responsiveness, and usability.
 
-## Available Scripts
+🔗 **Live Demo:**  
+[https://edentify-app.vercel.app](https://edentify-app.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   🗓️ Online appointment form (EmailJS)
+-   📋 Detailed services and pricing
+-   📸 Before & After gallery (Swiper)
+-   👨‍⚕️ Team presentation
+-   📍 Location cards & contact info
+-   🌐 Fully responsive design (mobile-first)
+-   🎯 Smooth scroll between sections (custom ScrollContext)
+-   🧭 Multi-page routing (React Router)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧰 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **React**
+-   **React Router**
+-   **EmailJS**
+-   **SwiperJS**
+-   **React Icons**
+-   **Custom Scroll Provider (React Context)**
+-   **CSS Modules / Standard CSS**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🗂️ Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+src/
+├── components/
+│   ├── aboutus/
+│   ├── beforeAndAfter/
+│   ├── contactInformation/
+│   ├── formProgramare/
+│   └── ...
+|
+├── pages/
+│   ├── Home.jsx
+│   ├── Contact.jsx
+│   └── ...
+├── contexts/
+│   └── ScrollContext.jsx
+├── App.jsx
+├── index.css
+└── ...
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone the project and install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/MihailNegulet/dental-clinical-app.git
+cd edentify-app
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app will run at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📌 About the Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This is a solo project created from scratch. The goal was to modernize an existing dental clinic website that lacked mobile support and had a poor structure. All components were built and styled manually, with a clean code structure and modular logic using React best practices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📬 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you'd like to get in touch or want to collaborate, feel free to connect with me via [LinkedIn](https://www.linkedin.com/in/negulet-mihail-31835983/) or check out more projects in my [GitHub profile](https://github.com/MihailNegulet).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
