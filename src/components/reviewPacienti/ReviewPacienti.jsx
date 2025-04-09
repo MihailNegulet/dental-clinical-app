@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "./ReviewPacienti.css";
+import googleImage from '../../assets/google-image.png'
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
@@ -38,7 +39,15 @@ const Reviews = () => {
     };
 
   return (
-    <div className="reviews-wrapper">
+      <div className="reviews-wrapper">
+          <div className="google-review">
+              <h3>Lasă-ne un review pe</h3>
+              <img className="google-image" src={googleImage} alt="Google " />
+              <a href="https://www.google.com/maps/place/eDentify/@44.4650577,26.0651145,17z/data=!3m1!4b1!4m6!3m5!1s0x40b203fcc8fcd2e3:0xc4d2cea82fa47677!8m2!3d44.4650577!4d26.0676894!16s%2Fg%2F11y56qc9rj?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D">
+                  <button className="google-btn">Apasă Aici</button>
+              </a>
+          </div>
+
         <h2 className="reviews-title">Ce spun pacienții noștri</h2>
             
             {reviews.length > 0 ? (
