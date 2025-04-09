@@ -1,12 +1,12 @@
 import React from 'react';
 import HeroSection from '../components/herosection/HeroSection';
 import Despre from '../components/despre-noi/Despre';
-import FormProgramare from '../components/formProgramare/FormProgramare';
 import OurTeam from '../components/ourTeam/OurTeam';
 import Services from '../components/servicii/Services';
 import BeforeAfterTabs from '../components/beforeAndAfter/BeforeAfterTabs';
 import LocationCards from '../components/locationCards/LocationCards';
 import TargetSection from '../components/TargetSection';
+import ReviewPacienti from '../components/reviewPacienti/ReviewPacienti';
 
 const Home = () => {
   return (
@@ -18,7 +18,8 @@ const Home = () => {
         <OurTeam />
       </TargetSection>
       <BeforeAfterTabs />
-        <LocationCards />  
+      <LocationCards />  
+      <ReviewPacienti />
     </div>
   );
 };

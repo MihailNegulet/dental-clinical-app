@@ -1,9 +1,14 @@
 import React from 'react';
 import EsteticaProtetica from '../components/esteticaProtetica/EsteticaProtetica';
+import ReviewPacienti from '../components/reviewPacienti/ReviewPacienti';
+
 
 const EsteticaDentara = () => {
   return (
-    <EsteticaProtetica />
+    <div>
+      <EsteticaProtetica />
+      <ReviewPacienti />
+    </div>
   );
 };
 

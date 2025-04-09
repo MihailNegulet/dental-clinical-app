@@ -1,5 +1,5 @@
 .location-container {
-    margin: 60px auto;
+    margin: auto;
     padding: 0 20px;
     text-align: center;
   }
@@ -199,7 +199,7 @@
   /* Responsive design pentru telefoane mobile */
 @media (max-width: 480px) {
   .location-container {
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 0 15px;
   }
 

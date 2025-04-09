@@ -5,6 +5,7 @@ import facebookIcon from '../../assets/facebook-icon.png';
 import instagramIcon from '../../assets/instagram-icon.png';
 import FormProgramare from '../formProgramare/FormProgramare';
 import TargetSection from '../TargetSection';
+import tiktokIcon from '../../assets/tiktok.png';
 
   
 const ContactInfo = () => {
@@ -27,6 +28,7 @@ return (
               <div>
                 <h3>Telefon</h3>
                 <p>+40 773 933 505</p>
+                <p>+40 762 663 557</p>
               </div>
             </div>
             
@@ -34,7 +36,7 @@ return (
               <div className="icon">✉️</div>
               <div>
                 <h3>Email</h3>
-                <p>receptie.dentify@gmail.com</p>
+                <p>edentifycare@gmail.com</p>
                
               </div>
             </div>
@@ -67,6 +69,9 @@ return (
                 <a href="https://www.instagram.com/edentifydentalcenter/" target="_blank" rel="noopener noreferrer">
                   <img src={instagramIcon} alt="Instagram" />
                 </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src={tiktokIcon} alt="TikTok" />
+                </a>
               </div>
             </div>
           </div>
@@ -78,7 +83,7 @@ return (
 
       {/* Sectiune Formular Programare */}
         <TargetSection sectionId="formProgramare" >
-        <FormProgramare />;
+        <FormProgramare />
         </TargetSection>
       </div>
     </div>

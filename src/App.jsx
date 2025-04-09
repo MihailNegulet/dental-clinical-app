@@ -14,12 +14,17 @@ import TermeniSiConditii from './pages/TermeniSiConditii';
 import PoliticaConfidentialitate from './pages/PoliticaConfidentialitate';
 import PoliticaCookie from './pages/PoliticaCookie';
 import ScrollToTopButton from './components/scrollToTopButton/ScrollToTopButton';
+import TopBar from './components/topBar/TopBar';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
     <Router>
       <ScrollProvider>
         <ScrollHandler />
+        <TopBar />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

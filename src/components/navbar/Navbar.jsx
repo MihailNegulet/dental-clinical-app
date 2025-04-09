@@ -52,7 +52,7 @@ const Navbar = () => {
           <NavLink to="/estetica-dentara">Estetica dentara si protetica</NavLink>
         </li>
         <li>
-          <NavLink to="/dantura-fixa">Dantura fixa si turism dentar</NavLink>
+          <NavLink to="/dantura-fixa">Dantura fixa în 24H</NavLink>
         </li>
         <li>
           <NavLink to="/preturi">Prețuri</NavLink>
