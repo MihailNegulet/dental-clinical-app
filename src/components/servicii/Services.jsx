@@ -19,6 +19,9 @@ import service11 from '../../assets/implant-dentar.jpg';
 import service12 from '../../assets/dinti-ficsi-24-ore.jpg';
 import service13 from '../../assets/chirurgie-orala.jpg';
 import TargetSection from "../TargetSection";
+import serviceVideo1 from '../../assets/videos/ad-elena-1.mp4';
+import serviceVideo2 from '../../assets/videos/ad-sabina-1.mp4';
+import serviceVideo3 from '../../assets/videos/ad-elena-2.mp4';
 
 const ourServices = [
     {
@@ -102,6 +105,24 @@ const ourServices = [
     
 ];
 
+const servicesVideo = [
+    {
+      video: serviceVideo1,
+      title: "Detraj și igienizare dentară",
+      description: "BRIGHT & SHINE (Detartraj ultrasunete, periaj profesional, air flow)"
+    },
+    {
+      video: serviceVideo2,
+      title: "Tratament de canal",
+      description: "Tratament endodontic (Tratament de canal)"
+    },
+    {
+      video: serviceVideo3,
+      title: "Lucrari protetice",
+      description: "Lucrări protetice (Coroane dentare, punți dentare)"
+    }
+  ];
+
 const Services = () => {
     const swiperRef = useRef(null);
 
@@ -143,6 +164,26 @@ const Services = () => {
                     </SwiperSlide>
                 ))}
                 </Swiper>
+
+                <div className="services-grid-video">
+                    {servicesVideo.map((service, index) => (
+                    <div className="service-card-video" key={index}>
+                        <div className="video-wrapper">
+                        <video 
+                            controls 
+                            className="service-video"
+                        >
+                            <source src={service.video} type="video/mp4" />
+                            Browser-ul tău nu suportă tag-ul video.
+                        </video>
+                        </div>
+                        <div className="service-info">
+                        <h3>{service.title}</h3>
+                        <p>{service.description}</p>
+                        </div>
+                    </div>
+                    ))}
+                </div>
             </TargetSection>
         </div>
     );

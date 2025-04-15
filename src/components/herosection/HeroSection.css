@@ -10,7 +10,7 @@
 
 .hero-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('../../assets/clinical-hero.jpg');
+        url('../../assets/dental.clinic.png');
     background-size: cover;
     background-position: right center;
     animation: zoomEffect 15s ease-in-out infinite alternate;

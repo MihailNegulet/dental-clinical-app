@@ -156,7 +156,88 @@
     font-weight: bold;
   }
   
+  .services-grid-video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card-video {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .service-card-video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    background: #000;
+  }
+
+  .service-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .service-info {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .service-info h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .service-info p {
+    color: var(--dark-text);
+    font-style: italic;
+    margin: 0;
+  }
+
+
   /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .services-grid-video{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 800px;
+    }
+    .service-card {
+      transform: scale(0.9); /* Micșorăm ușor cardurile */
+      margin: 0 auto; /* Centrare */
+    }
+    .video-wrapper {
+      padding-bottom: 60%; /* Proporție mai compactă */
+    }
+  
+    .service-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+  
+    .service-info p {
+      font-size: 0.9rem;
+    }
+
+  }
+
   @media (max-width: 768px) {
     .services-carousel {
       padding: 60px 15px;
@@ -178,6 +259,23 @@
     .service-information p {
       font-size: 0.9rem;
       padding: 0 15px 20px;
+    }
+    .services-grid-video{
+      gap: 1rem;
+    }
+    .video-wrapper {
+      padding-bottom: 65%; /* Proporție și mai compactă */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .services-grid-video {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+    }
+    
+    .video-wrapper {
+      padding-bottom: 75%; /* Adaptare pentru mobil */
     }
   }
   

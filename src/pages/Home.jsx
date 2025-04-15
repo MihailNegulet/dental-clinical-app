@@ -7,11 +7,14 @@ import BeforeAfterTabs from '../components/beforeAndAfter/BeforeAfterTabs';
 import LocationCards from '../components/locationCards/LocationCards';
 import TargetSection from '../components/TargetSection';
 import ReviewPacienti from '../components/reviewPacienti/ReviewPacienti';
+import WhyChooseUs from '../components/whyChooseUs/WhyChooseUs';
+import Testimonials from '../components/testimoniale/Testimonials';
 
 const Home = () => {
   return (
     <div>
       <HeroSection />
+      <WhyChooseUs />
       <Despre />
       <Services />
       <TargetSection sectionId="ourTeam" >
@@ -20,6 +23,9 @@ const Home = () => {
       <BeforeAfterTabs />
       <LocationCards />  
       <ReviewPacienti />
+      <Testimonials />
+
+      
     </div>
   );
 };
