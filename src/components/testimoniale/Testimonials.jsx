@@ -1,6 +1,8 @@
 import React from 'react';
 import './Testimonials.css';
 import testimonial1 from '../../assets/videos/testimonial1.mp4';
+import poster1 from '../../assets/poster.jpg';
+
 
 const Testimonials = () => {
   return (
@@ -12,8 +14,8 @@ const Testimonials = () => {
         <div className="video-wrapper">
           <video 
             controls 
-            className="testimonial-video"
-          
+            className="service-video"
+            poster={poster1} 
           >
             <source src={testimonial1} type="video/mp4" />
             Browser-ul tău nu suportă tag-ul video.
@@ -28,3 +30,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

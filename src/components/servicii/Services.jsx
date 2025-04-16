@@ -22,6 +22,7 @@ import TargetSection from "../TargetSection";
 import serviceVideo1 from '../../assets/videos/ad-elena-1.mp4';
 import serviceVideo2 from '../../assets/videos/ad-sabina-1.mp4';
 import serviceVideo3 from '../../assets/videos/ad-elena-2.mp4';
+import poster1 from '../../assets/poster.jpg';
 
 const ourServices = [
     {
@@ -172,6 +173,8 @@ const Services = () => {
                         <video 
                             controls 
                             className="service-video"
+                            poster={poster1}
+                            
                         >
                             <source src={service.video} type="video/mp4" />
                             Browser-ul tău nu suportă tag-ul video.

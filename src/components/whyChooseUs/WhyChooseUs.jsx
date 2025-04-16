@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
             <div className="feature-icon">
                 <img src={chooseUs2} alt="Feature 2" className="feature-icon-image" />
             </div>          
-            <div className="feature-text">Îți stă la dispoziție o echipă de specialiști cu peste 15 ani experie</div>
+            <div className="feature-text">Îți stă la dispoziție o echipă de specialiști cu peste 15 ani experiență</div>
           </div>
           
           <div className="feature-card">
