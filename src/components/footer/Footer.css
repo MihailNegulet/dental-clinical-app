@@ -43,7 +43,8 @@
   }
   
   .copyright,
-  .update-info {
+  .update-info, 
+  .author-info {
     text-align: center;
     line-height: 1.6;
   }
@@ -68,6 +69,12 @@
   .social-icon:hover {
     color: var(--hover, #ddc9ca);
     transform: translateY(-2px);
+  }
+
+  .author-info {
+    font-size: 0.8rem;
+    color: var(--light-text, #fff);
+    text-decoration: none;
   }
   
   /* Responsive design */

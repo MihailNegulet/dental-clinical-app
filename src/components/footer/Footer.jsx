@@ -19,7 +19,6 @@ const Footer = () => {
           © eDentify 2025 | All Rights Reserved
         </div>
         
-        
         <div className="social-links">
           <span>Follow us on</span>
           <a href="https://www.facebook.com/edentifyclinic" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -31,6 +30,10 @@ const Footer = () => {
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Tik-Tok">
             <FaTiktok className="social-icon" />
           </a>
+        </div>
+
+        <div className="copyright">
+        <a href="https://github.com/MihailNegulet" target="_blank" rel="noopener noreferrer" className='author-info'>© Made by Mihail Negulet | Contact: mihailnegulet@gmail.com </a>
         </div>
       </div>
     </footer>
